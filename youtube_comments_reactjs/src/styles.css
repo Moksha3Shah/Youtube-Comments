@@ -1,0 +1,189 @@
+body {
+    background-color: #c02942; /* YouTube red */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .video-grid {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute videos evenly */
+    /* margin-top: 20px; Add margin after header */ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly with spacing */
+    margin: 0 20px; /* Center the grid horizontally */
+  }
+  
+  .app {
+    display: flex; /* Allow for stacking header and video grid */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .header-container {
+    text-align: center; /* Center header text horizontally */
+    padding: 10px 20px; /*Add some padding for aesthetics
+    border-bottom: 1px solid #ddd; /* Light border below header */
+    background-color: #ddd; /* White background for header */
+    color: #c02942;
+  }
+
+  .header-container2 {
+    text-align: center; /* Center header text horizontally */
+    margin-top: 20px;
+    padding: 5px; /*Add some padding for aesthetics
+    border-bottom: 1px solid #ddd; /* Light border below header */
+    background-color: #ddd; /* White background for header */
+    color: #c02942;
+  }
+
+  .page-header {
+    /* margin: 0; Remove default margin for heading */
+    /* padding: 10px 20px; Add some padding for aesthetics */
+    /* border-bottom: 1px solid #ddd; Light border below header */
+    text-align: center;
+  }
+
+  .comments {
+    background-color: #c02942; /* YouTube red */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Add some padding for comfort */
+    font-weight: bold; /* Make text bold for emphasis */
+    /* cursor: pointer; Indicate clickable behavior */
+    pointer-events: all;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .video-container {
+    margin: 10px; /* Add some margin for spacing */
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background for videos */
+    display: flex; /* Allow video and info side-by-side */
+    align-items: center;
+    align-content: center;
+    text-align: center; 
+    display: flex;
+
+  }
+  
+  .video-wrapper {
+    flex: 1; 
+    align-content: center;
+    align-items: center;
+    display: list-item;
+  } 
+
+
+  
+  .video-wrapper a img {
+    width: 100%; /* Fill the container width */
+    object-fit: cover; /* Resize the image to cover the container */
+  }
+  
+  .video-info {
+    text-align: right; 
+    margin-left: 10px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .video-divider {
+    width: 100%; /* Full width divider */
+    margin: 10px 0; /* Margin top and bottom */
+  }
+
+  .loading {
+/* Loading state styling */
+text-align: center;
+padding: 15px;
+border-radius: 4px;
+background-color: #f5f5f5; /* Light gray background */
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+margin-bottom: 10px; /* Spacing from other content */
+color: red;
+  }
+
+.display-comments {
+    /* Container for comments */
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.comments-list {
+  /* Individual comment styling */
+  display: flex; /* Arrange elements horizontally */
+  align-items: center; /* Align content vertically */
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 10px; /* Spacing between comments */
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.2s ease-in-out; /* Smooth background color transition */
+  cursor: default; /* Default cursor style */
+  color: #c02942;
+  text-align: center;
+}
+
+
+.comments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit responsive columns */
+  grid-gap: 30px; /* Spacing between cards */
+  list-style: none;
+  padding: 0;
+  margin: 40px;
+  text-align: center;
+  align-items: center;
+  color:#c02942;
+}
+
+.comment-card {
+  /* Styles for the comment card container */
+  display: flex;
+  flex-direction: column; /* Stack information and comment vertically */
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 10px; /* Spacing between cards */
+  transition: background-color 0.2s ease-in-out; /* Smooth background color transition */
+  cursor: default; /* Default cursor style */
+}
+
+.comment-card:hover {
+  /* Hover effect for highlighting */
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+.comment-info {
+  /* Styles for the information section */
+  margin-bottom: 10px; /* Space between info and comment */
+}
+
+.comment-info p {
+  /* Style for individual paragraphs within information */
+  margin: 0 5px; /* Spacing between info elements */
+}
+
+.total-comments {
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 10px; /* Add some spacing below the total count */
+}
+
+  
